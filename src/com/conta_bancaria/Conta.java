@@ -5,7 +5,7 @@ public class Conta {
     private int numero;
     private String titular;
     private double limite;
-    private double saldo;
+    private double saldo = 0;
 
     // CONSTRUCTOR
     public Conta(int numero, String titular, double limite) {
