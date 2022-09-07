@@ -16,7 +16,7 @@ public class Conta {
 
     // MÉTODOS
     public void sacar( double valor ) {
-        if ( this.saldo >= 0 && valor < this.limite ) { // Para sacar precisa ter saldo na conta ou
+        if ( this.saldo > 0 && valor < this.limite ) { // Para sacar precisa ter saldo na conta ou
             this.saldo -= valor;                        // o valor precisa ser menor q o limite.
             System.out.println("O valor de R$" + valor + " foi sacado!");
         } else {
